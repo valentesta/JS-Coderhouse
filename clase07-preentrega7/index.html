@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Simulador</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <header class="encabezado">
+            <h1>Mi Simulador</h1>
+            <p>Administrá tus productos</p>
+        </header>
+
+        <form id="formulario">
+            <input type="text" id="nombreInput" placeholder="Nombre del producto">
+            <input type="number" id="precioInput" placeholder="Precio">
+            <button type="submit">+ Agregar</button>
+        </form>
+
+        <p id="mensaje" class="mensaje"></p>
+
+        <input type="text" id="buscador" class="buscador" placeholder="🔎 Buscar producto...">
+
+        <div id="contenedor-items"></div>
+
+        <p id="total" class="total"></p>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
