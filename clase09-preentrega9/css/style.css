@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #222;
+}
+
+header {
+    background-color: #1f3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.formulario,
+.buscador {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.formulario h2 {
+    width: 100%;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.buscador input {
+    flex: 1;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e7d32;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#botonReiniciar {
+    background-color: #c62828;
+}
+
+.aviso {
+    background-color: #fff3cd;
+    border: 1px solid #e0b100;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+.mensaje {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.mensaje.exito {
+    color: #2e7d32;
+}
+
+.mensaje.error {
+    color: #c62828;
+}
+
+.resumen {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.tarjeta h3 {
+    margin-bottom: 8px;
+}
+
+.tarjeta p {
+    margin-bottom: 6px;
+}
+
+.tarjeta input {
+    width: 70px;
+    margin-right: 6px;
+}
+
+.sin-stock {
+    color: #c62828;
+    font-weight: bold;
+}

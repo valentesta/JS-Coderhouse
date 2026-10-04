@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Inventario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Simulador de Inventario</h1>
+    </header>
+
+    <main>
+        <div id="aviso" class="aviso oculto"></div>
+        <div id="mensaje" class="mensaje"></div>
+
+        <section class="formulario">
+            <h2>Agregar producto</h2>
+            <input type="text" id="inputNombre" placeholder="Nombre">
+            <input type="number" id="inputPrecio" placeholder="Precio">
+            <input type="text" id="inputCategoria" placeholder="Categoría">
+            <input type="number" id="inputStock" placeholder="Stock">
+            <button id="botonAgregar">Agregar</button>
+        </section>
+
+        <section class="buscador">
+            <input type="text" id="inputBuscar" placeholder="Buscar producto...">
+            <button id="botonReiniciar">Reiniciar inventario</button>
+        </section>
+
+        <p id="resumen" class="resumen"></p>
+
+        <section id="contenedorProductos" class="productos"></section>
+    </main>
+</body>
+</html>
